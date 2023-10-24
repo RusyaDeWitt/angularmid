@@ -3,7 +3,8 @@
     <h4 class="post__username">{{post.username}}</h4>
     <p>{{post.description}}</p>
     <div class="post__stats">
-      <p>{{post.likes}} отметок "Нравится"</p>
+      <p>{{likes}} отметок "Нравится"</p>
+      <button nz-button (click)="pressLike()">press to like</button>
     </div>
   </div>
 </div>
