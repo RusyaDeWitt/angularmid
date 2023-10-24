@@ -15,7 +15,7 @@ export class DataService {
 
   private posts: any = {
     posts: [
-      { username: 'rusyaless', description: 'Для тех кто думает что роботизация это что-то далекое и не скорое.\n' +
+      { username: null, description: 'Для тех кто думает что роботизация это что-то далекое и не скорое.\n' +
           'Amazon уже вовсю внедряет это на своих складах.', likes: 104 },
       { username: 'tebirenn', description: 'SLAM MAKHACHEV HEAD KICK KOs ALEX VOLKANOVSKI 🤯', likes: 105 },
       { username: 'adeem', description: 'Mcgregor wants to see Paulo vs Khamzat !', likes: 2434 },
@@ -23,9 +23,6 @@ export class DataService {
     ]
   };
 
-  getData() {
-    return this.myData;
-  }
 
   getPosts() {
     return this.posts;

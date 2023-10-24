@@ -1,5 +1,7 @@
+
+
 <div class="post__body" *ngFor="let post of posts">
-  <div class="post__content">
+  <div class="post__content" *ngIf="post.username">
     <h4 class="post__username">{{post.username}}</h4>
     <p>{{post.description}}</p>
     <div class="post__stats">

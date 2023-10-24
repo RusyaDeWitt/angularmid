@@ -1,1 +1,6 @@
-<p>home works!</p>
+<p>Home News</p>
+<input nz-input placeholder="Type a news" [(ngModel)]="description" />
+<button (click)="addNews()" >add</button>
+<div *ngFor="let new of news">
+  <p>{{new.description}}</p>
+</div>
